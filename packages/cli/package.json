@@ -1,6 +1,6 @@
 {
   "name": "jbook-cli-app",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "publishConfig": {
     "access": "public"
@@ -17,10 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@jbook-cli-app/local-client": "^1.0.0"
+    "@jbook-cli-app/local-client": "^2.0.0"
   },
   "devDependencies": {
-    "@jbook-cli-app/local-api": "^1.0.0",
+    "@jbook-cli-app/local-api": "^2.0.0",
     "@types/node": "^20.4.2",
     "commander": "^11.0.0",
     "esbuild": "0.8.26",
