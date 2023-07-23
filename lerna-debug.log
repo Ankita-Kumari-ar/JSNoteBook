@@ -1,13 +1,103 @@
 0 silly argv {
-0 silly argv   _: [ 'add' ],
-0 silly argv   scope: 'local-api',
-0 silly argv   globs: [],
+0 silly argv   _: [ 'publish' ],
+0 silly argv   push: false,
+0 silly argv   composed: 'publish',
 0 silly argv   lernaVersion: '3.22.1',
-0 silly argv   '$0': 'C:\\Users\\ankit\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js',
-0 silly argv   pkg: 'local-client'
+0 silly argv   '$0': '..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
 0 silly argv }
 1 notice cli v3.22.1
 2 verbose rootPath C:\Users\ankit\Desktop\react\JavaScript-Notebook
-3 error JSONError: Unexpected token } in JSON at position 538 while parsing near '...": "^2.0.6",      }}' in ..\local-api\package.json
-3 error     at module.exports (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\parse-json\index.js:26:19)
-3 error     at parse (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\load-json-file\index.js:15:9)
+3 verbose session 51bc575b3e46c920
+4 verbose user-agent lerna/3.22.1/node@v18.16.0+x64 (win32)
+5 silly argv {
+5 silly argv   _: [ 'publish' ],
+5 silly argv   push: false,
+5 silly argv   composed: 'publish',
+5 silly argv   lernaVersion: '3.22.1'
+5 silly argv }
+6 verbose rootPath C:\Users\ankit\Desktop\react\JavaScript-Notebook
+7 info current version 0.0.0
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly currentBranch
+11 verbose currentBranch master
+12 silly hasTags
+13 verbose hasTags false
+14 info Assuming all packages changed
+15 verbose updated jbook-cli-app
+16 verbose updated @jbook-cli-app/local-api
+17 verbose updated @jbook-cli-app/local-client
+18 verbose git-describe undefined => "d5fda1e"
+19 silly git-describe parsed => {"refCount":"1","sha":"d5fda1e","isDirty":false}
+20 info execute Skipping git push
+21 info execute Skipping releases
+22 silly lifecycle No script for "preversion" in "root", continuing
+23 silly lifecycle No script for "preversion" in "@jbook-cli-app/local-client", continuing
+24 silly lifecycle No script for "version" in "@jbook-cli-app/local-client", continuing
+25 silly lifecycle No script for "preversion" in "@jbook-cli-app/local-api", continuing
+26 silly lifecycle No script for "version" in "@jbook-cli-app/local-api", continuing
+27 silly lifecycle No script for "preversion" in "jbook-cli-app", continuing
+28 silly lifecycle No script for "version" in "jbook-cli-app", continuing
+29 silly lifecycle No script for "version" in "root", continuing
+30 silly gitAdd [
+30 silly gitAdd   'packages/local-client/package.json',
+30 silly gitAdd   'packages/local-client/package-lock.json',
+30 silly gitAdd   'packages/local-api/package.json',
+30 silly gitAdd   'packages/local-api/package-lock.json',
+30 silly gitAdd   'packages/cli/package.json',
+30 silly gitAdd   'packages/cli/package-lock.json',
+30 silly gitAdd   'lerna.json'
+30 silly gitAdd ]
+31 silly gitCommit v1.0.0
+32 verbose git [ 'commit', '-m', 'v1.0.0' ]
+33 silly gitTag v1.0.0
+34 verbose git [ 'tag', 'v1.0.0', '-m', 'v1.0.0' ]
+35 silly lifecycle No script for "postversion" in "jbook-cli-app", continuing
+36 silly lifecycle No script for "postversion" in "@jbook-cli-app/local-api", continuing
+37 silly lifecycle No script for "postversion" in "@jbook-cli-app/local-client", continuing
+38 silly lifecycle No script for "postversion" in "root", continuing
+39 info publish Publishing packages to npm...
+40 info Verifying npm credentials
+41 verbose Retrieving npm user profile
+42 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 969ms
+43 silly npm profile get received {"tfa":false,"name":"priya19ank","email":"priya19ank@gmail.com","email_verified":true,"created":"2023-07-22T04:27:48.283Z","updated":"2023-07-22T04:27:48.278Z","cidr_whitelist":null}
+44 silly get npm username received {"username":"priya19ank","tfa":false,"name":"priya19ank","email":"priya19ank@gmail.com","email_verified":true,"created":"2023-07-22T04:27:48.283Z","updated":"2023-07-22T04:27:48.278Z","cidr_whitelist":null}
+45 silly verifyNpmPackageAccess
+46 http fetch GET 200 https://registry.npmjs.org/-/org/priya19ank/package?format=cli 404ms
+47 info Checking two-factor auth mode
+48 verbose Retrieving npm user profile
+49 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 357ms
+50 silly npm profile get received {"tfa":false,"name":"priya19ank","email":"priya19ank@gmail.com","email_verified":true,"created":"2023-07-22T04:27:48.283Z","updated":"2023-07-22T04:27:48.278Z","cidr_whitelist":null}
+51 silly 2FA false
+52 warn ENOLICENSE Packages jbook-cli-app, @jbook-cli-app/local-api, and @jbook-cli-app/local-client are missing a license.
+52 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+52 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+53 silly getCurrentSHA
+54 verbose getCurrentSHA 1313583a1a3518cd6d88127df08bf645750a2c99
+55 silly lifecycle No script for "prepublish" in "root", continuing
+56 silly lifecycle No script for "prepare" in "root", continuing
+57 silly lifecycle No script for "prepublishOnly" in "root", continuing
+58 silly lifecycle No script for "prepack" in "root", continuing
+59 verbose pack-directory packages\local-client
+60 silly lifecycle No script for "prepublish" in "@jbook-cli-app/local-client", continuing
+61 silly lifecycle No script for "prepare" in "@jbook-cli-app/local-client", continuing
+62 silly lifecycle "prepublishOnly" starting in "@jbook-cli-app/local-client"
+63 info lifecycle @jbook-cli-app/local-client@1.0.0~prepublishOnly: @jbook-cli-app/local-client@1.0.0
+64 verbose lifecycle @jbook-cli-app/local-client@1.0.0~prepublishOnly: unsafe-perm in lifecycle true
+65 verbose lifecycle @jbook-cli-app/local-client@1.0.0~prepublishOnly: PATH: C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\ankit\Desktop\react\JavaScript-Notebook\packages\local-client\node_modules\.bin;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk-19\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\ankit\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\ankit\AppData\Local\Programs\Python\Python39\;C:\Users\ankit\AppData\Local\Microsoft\WindowsApps;C:\Users\ankit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.4\bin;C:\MinGW\bin;C:\Users\ankit\AppData\Roaming\npm
+66 verbose lifecycle @jbook-cli-app/local-client@1.0.0~prepublishOnly: CWD: C:\Users\ankit\Desktop\react\JavaScript-Notebook\packages\local-client
+67 silly lifecycle @jbook-cli-app/local-client@1.0.0~prepublishOnly: Args: [ '/d /s /c', 'npm run build' ]
+68 silly lifecycle @jbook-cli-app/local-client@1.0.0~prepublishOnly: Returned: code: 0  signal: null
+69 silly lifecycle "prepublishOnly" finished in "@jbook-cli-app/local-client"
+70 silly lifecycle No script for "prepack" in "@jbook-cli-app/local-client", continuing
+71 error ZlibError: zlib: invalid block type
+71 error     at Unzip.write (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\minizlib\index.js:147:22)
+71 error     at Parser.write (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\tar\lib\parse.js:305:58)
+71 error     at Yallist.<anonymous> (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:374:18)
+71 error     at Yallist.forEach (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\yallist\yallist.js:156:8)
+71 error     at ReadStream.emit (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:373:20)
+71 error     at ReadStream.emit (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:154:22)
+71 error     at ReadStream.write (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:163:17)
+71 error     at [_handleChunk] (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:131:19)
+71 error     at [_onread] (C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:109:32)
+71 error     at C:\Users\ankit\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:101:22
