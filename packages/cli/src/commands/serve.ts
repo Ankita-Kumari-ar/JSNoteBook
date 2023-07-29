@@ -1,6 +1,6 @@
 import path from "path";
 import { Command } from "commander";
-import { serve } from "@jbook-cli-app/local-api";
+import { serve } from "@js-cli-notebook/local-api";
 
 interface LocalApiError {
   code: string;

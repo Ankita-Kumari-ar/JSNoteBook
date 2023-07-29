@@ -23,7 +23,7 @@ export const serve = (
     );
   } else {
     const packagePath = require.resolve(
-      "@jbook-cli-app/local-client/build/index.html"
+      "@js-cli-notebook/local-client/build/index.html"
     );
     app.use(express.static(path.dirname(packagePath)));
   }

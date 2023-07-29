@@ -1,5 +1,5 @@
 {
-  "name": "jbook-cli-app",
+  "name": "js-cli-notebook",
   "version": "2.0.0",
   "description": "",
   "publishConfig": {
@@ -17,14 +17,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@jbook-cli-app/local-client": "^2.0.0"
+    "@js-cli-notebook/local-client": "^2.0.0"
   },
   "devDependencies": {
-    "@jbook-cli-app/local-api": "^2.0.0",
     "@types/node": "^20.4.2",
-    "commander": "^11.0.0",
+    "@js-cli-notebook/local-api": "^2.0.0",
     "esbuild": "0.8.26",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "commander": "^11.0.0"
   },
   "gitHead": "1313583a1a3518cd6d88127df08bf645750a2c99"
 }
