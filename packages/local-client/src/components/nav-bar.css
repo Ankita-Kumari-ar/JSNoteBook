@@ -1,0 +1,13 @@
+.nav-bar{
+    padding:1rem 1.5rem 0.8rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    
+    align-items: center;
+}
+
+.nav-bar .app-title {
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+}

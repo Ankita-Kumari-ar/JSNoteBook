@@ -1,6 +1,6 @@
 .add-cell {
   position: relative;
-  opacity: 0.09;
+  opacity: 0;
   transition: opacity 0.3s ease-in 0.1s;
   margin: 10px 0;
 }
@@ -32,6 +32,7 @@
 .add-cell .add-buttons-wrapper {
   display: flex;
   justify-content: center;
+  margin:0.8rem 0;
 }
 
 .add-cell .add-buttons-wrapper button {
