@@ -26,6 +26,7 @@ export const createCellsRouter = (filename: string, dir: string) => {
       const result = await fs.readFile(fullPath, { encoding: "utf-8" });
 
       response.send(JSON.parse(result));
+      response.send(result);
     } catch (err) {
       // If read throws an error
       // Inspect the error, see if it says that the file doesn't exists
@@ -49,23 +50,7 @@ export const createCellsRouter = (filename: string, dir: string) => {
     const { cells }: { cells: Cell[] } = request.body;
 
     // Write the cells into the file
-    const comment = "//";
-    let fileData = "";
-
-    for (let cell of cells) {
-      if (cell.content) {
-        if (cell.type === "text") {
-          fileData += comment + cell.content.replaceAll("\n", "\n" + comment);
-        } else {
-          fileData += cell.content;
-        }
-        fileData += "\n\n";
-      }
-    }
-
-    // console.log(cells);
-    // await fs.writeFile(fullPath, JSON.stringify(cells), "utf-8");
-    await fs.writeFile(fullPath, fileData, "utf-8");
+    await fs.writeFile(fullPath, JSON.stringify(cells), "utf-8");
 
     response.send({ status: "ok" });
   });

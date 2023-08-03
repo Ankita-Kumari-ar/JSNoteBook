@@ -1,0 +1,32 @@
+.help-page-content{
+    /* background-color: rgb(76, 77, 77); */
+    border:0.1rem solid gray;
+    padding:1rem;
+    margin:2rem
+}
+
+section{
+    margin-bottom: 1.2rem;
+}
+.help-page-heading{
+    font-size: xx-large;
+    margin-bottom: 0.8rem;
+}
+
+.sub-heading{
+    font-size: x-large;
+    margin-bottom: 0.8rem;
+}
+
+.list-code{
+    margin:1rem 0;
+}
+.code-img{
+    padding: 0.5rem;
+    display: inline-block;
+}
+.back-to-note-book{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}

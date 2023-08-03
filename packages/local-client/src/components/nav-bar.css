@@ -11,3 +11,13 @@
     font-size: large;
     font-family: 'Poppins', sans-serif;
 }
+
+.nav-bar .help-download-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.nav-bar .help-btn{
+    cursor: pointer;
+}
