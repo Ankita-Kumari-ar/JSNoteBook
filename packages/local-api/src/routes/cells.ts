@@ -55,18 +55,16 @@ export const createCellsRouter = (filename: string, dir: string) => {
     for (let cell of cells) {
       if (cell.content) {
         if (cell.type === "text") {
-          fileData +=
-            "\n" + comment + cell.content.replaceAll("\n", "\n" + comment);
+          fileData += comment + cell.content.replaceAll("\n", "\n" + comment);
         } else {
-          fileData += "\n\n" + cell.content;
+          fileData += cell.content;
         }
+        fileData += "\n\n";
       }
     }
 
     // console.log(cells);
     // await fs.writeFile(fullPath, JSON.stringify(cells), "utf-8");
-
-    console.log(fileData);
     await fs.writeFile(fullPath, fileData, "utf-8");
 
     response.send({ status: "ok" });
