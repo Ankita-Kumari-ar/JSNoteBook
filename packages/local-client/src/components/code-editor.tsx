@@ -1,9 +1,9 @@
-import './code-editor.css';
-import './syntax.css';
-import MonacoEditor, { EditorDidMount } from '@monaco-editor/react';
-import prettier from 'prettier';
-import parser from 'prettier/parser-babel';
-import { useRef } from 'react';
+import "./code-editor.css";
+import "./syntax.css";
+import MonacoEditor, { EditorDidMount } from "@monaco-editor/react";
+import prettier from "prettier";
+import parser from "prettier/parser-babel";
+import { useRef } from "react";
 
 interface CodeEditorProps {
   initialValue: string;
@@ -37,25 +37,27 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
     //get current value form the editor
     const unformated = editorRef.current.getModel().getValue();
 
-    //format the value
-    const formated = prettier
-      .format(unformated, {
-        parser: 'babel',
-        plugins: [parser],
-        useTabs: false,
-        semi: true,
-        singleQuote: true,
-      })
-      .replace(/\n$/, '');
+    try {
+      //format the value
+      const formated = prettier
+        .format(unformated, {
+          parser: "babel",
+          plugins: [parser],
+          useTabs: false,
+          semi: true,
+          singleQuote: true,
+        })
+        .replace(/\n$/, "");
+      editorRef.current.setValue(formated);
+    } catch (err) {}
 
     //set the formated value back in the editor
-    editorRef.current.setValue(formated);
   };
 
   return (
-    <div className="editor-wrapper">
+    <div className='editor-wrapper'>
       <button
-        className="button button-format is-primary is-small"
+        className='button button-format is-primary is-small'
         onClick={onFormatClick}
       >
         Format
@@ -63,11 +65,11 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
       <MonacoEditor
         editorDidMount={onEditorDidMount}
         value={initialValue}
-        height="100%"
-        language="javascript"
-        theme="dark"
+        height='100%'
+        language='javascript'
+        theme='dark'
         options={{
-          wordWrap: 'on',
+          wordWrap: "on",
           minimap: { enabled: false },
           showUnused: false,
           folding: false,

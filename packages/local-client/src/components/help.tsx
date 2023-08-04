@@ -11,74 +11,105 @@ const Help: React.FC<HelpProps> = ({ onChangePage }) => {
     <div className='help-page'>
       <div className='help-page-content'>
         <header className='help-page-heading'>
-          Welcome to the JSNoteBook Tour
+          JSNoteBook - Your Interactive Coding Environment
         </header>
         <section className='introduction'>
-          Your one-stop interactive coding environment. Write, execute, and
-          document JavaScript code effortlessly in real-time with Markdown-based
-          documentation
+          Welcome to JSNoteBook, your one-stop interactive coding environment
+          for JavaScript. With JSNoteBook, you can effortlessly write, execute,
+          and document JavaScript code in real-time with Markdown-based
+          documentation.
         </section>
         <section className='getting-started'>
-          <p className='sub-heading'>Getting Started</p>
+          <p className='sub-heading'>Getting Started:</p>
           <p>
-            Click on{" "}
-            <button className='button is-rounded is-primary is-small'>
-              <span className='icon is-small'>
-                <i className='fas fa-plus' />
-              </span>
-              <span>Text</span>
-            </button>{" "}
-            to add text cell and{" "}
-            <button className='button is-rounded is-primary is-small'>
-              <span className='icon is-small'>
-                <i className='fas fa-plus' />
-              </span>
-              <span>Code</span>
-            </button>{" "}
-            to add a cell text
+            <ul>
+              <li className='list-code'>
+                {""}Click on{" "}
+                <button
+                  className='button is-rounded is-primary is-small '
+                  disabled
+                >
+                  <span className='icon is-small'>
+                    <i className='fas fa-plus' />
+                  </span>
+                  <span>Text</span>
+                </button>{" "}
+                to add text cell
+              </li>
+
+              <li className='list-code'>
+                {""}Click on{" "}
+                <button
+                  className='button is-rounded is-primary is-small '
+                  disabled
+                >
+                  <span className='icon is-small'>
+                    <i className='fas fa-plus' />
+                  </span>
+                  <span>Code</span>
+                </button>{" "}
+                to add a cell text
+              </li>
+            </ul>
           </p>
         </section>
         <section className='text-cell'>
-          <p className='sub-heading'>Edit Text Cells</p>
-          <p>Click on text cell to modify and update their content</p>
+          <p className='sub-heading'>Edit Text Cells:</p>
+          <p>
+            To modify and update the content in text cells, simply click on the
+            text cell and start editing.
+          </p>
         </section>
         <section className='code-execution'>
-          <p className='sub-heading'>Code Execution</p>
+          <p className='sub-heading'>Code Execution:</p>
           <p>
-            Code cell features a fully-featured code editor with live execution.
+            JSNoteBook's code cell features a fully-featured code editor with
+            live execution. You can write your JavaScript code here and see the
+            results in real-time.
           </p>
           <ul>
             <li className='list-code'>
-              Write React Code and use html element with id "root" to access the
-              preview window
+              You can access and manipulate the preview DOM element with the id
+              "root" in JSNoteBook. Changes made to this element will be
+              reflected in the preview area, enabling effective code
+              visualization and testing.
+            </li>
+            <li className='list-code'>
+              Example: To use React and render HTML elements, use the code
+              below:
               <img className='code-img' src={ReactCodeImg} alt='react code' />
             </li>
             <li className='list-code'>
-              show() function built into the environment, allows to show any
-              jsx, string, numbers in the preview window.
+              The built-in " show() " function in JSNoteBook enables you to
+              display JSX, strings, and numbers directly in the preview window.
               <img className='code-img' src={ShowImg} alt='react code' />
             </li>
           </ul>
         </section>
         <section className='saving-exporting'>
-          <p className='sub-heading'>Saving and Exporting file</p>
+          <p className='sub-heading'>Saving and Exporting file:</p>
           <p>
             <ul>
               <li>
-                Changes automatically saved to the opened file "fileName.js" in
-                JSON format, when run the command{" "}
-                <span style={{ backgroundColor: "black" }}>
-                  " npx js-cli-notebook serve fileName.js "
-                </span>{" "}
-                in JSON format.
-                <p>
-                  Click on Download button to download the file in runnable
-                  javascript format.
-                </p>
+                In JSNoteBook, your code is effortlessly and automatically saved
+                in the opened file (default "notebook.js"), ensuring a smooth
+                and stress-free coding experience.
               </li>
-              <li></li>
             </ul>
           </p>
+        </section>
+        <section className='download'>
+          <p className='sub-heading'>Download:</p>
+          <p>
+            When you're done with your code, click on the "Download" button to
+            download your file in a runnable JavaScript format.
+          </p>
+        </section>
+        <section className='More Info'>
+          <p className='sub-heading'>More Info:</p>
+          <a href='#' target='_blank'>
+            Github
+          </a>
         </section>
       </div>
       <button
